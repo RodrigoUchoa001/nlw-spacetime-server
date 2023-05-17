@@ -1,0 +1,47 @@
+iniciar o projeto javascript
+npm init -y 
+
+instalar typescripte como dev, pois o node n entende typescript
+npm i typescript -D
+
+pro typescript "entender" q está num projeto node
+npm i @types/node -D
+
+criar arquivo tsconfig.json
+npx tsc --init
+
+na linha 14 colocar: 
+"target": "es2020",
+
+criar arquivo:
+src/server.ts
+
+pra n precisar converter ts pra js na mão
+npm i tsx -D
+
+colocar no package.json
+"scripts": {
+    "dev": "tsx src/server.ts"
+},
+
+colocando "watch" fica executando infinitamente e dando reload quando alterar o arquivo
+ "scripts": {
+    "dev": "tsx watch src/server.ts"
+},
+
+instalar fastify pra criar API
+npm i fastify
+
+instalar prisma pra DB
+npm i prisma -D
+
+dizendo pro prisma q vou usar SQLite, e n o padrão postgres
+npx prisma init --datasource-provider SQLite
+
+
+DEPOIS DE FAZER UMA ALTERAÇÃO NO schema.prisma
+pra criar as tabelas:
+npx prisma migrate dev
+
+Pra usar o prisma na API
+npm i @prisma/client
