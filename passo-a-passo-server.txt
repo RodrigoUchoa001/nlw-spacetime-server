@@ -53,3 +53,6 @@ const paramsSchema = z.object({
     id: z.string().uuid(),
 })
 significa q quero garantir q o params sempre tenha um "id" do tipo "string" e q seja um "uuid"
+
+pra escolher quais front end quero deixar q use a API
+npm i @fastify/cors
