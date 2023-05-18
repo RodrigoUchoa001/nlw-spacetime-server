@@ -45,3 +45,11 @@ npx prisma migrate dev
 
 Pra usar o prisma na API
 npm i @prisma/client
+
+biblioteca pra fazer a validação do tipo do "id" da memoria q vem no params
+npm i zod
+pra fazer essa validação cria o squema assim:
+const paramsSchema = z.object({
+    id: z.string().uuid(),
+})
+significa q quero garantir q o params sempre tenha um "id" do tipo "string" e q seja um "uuid"
