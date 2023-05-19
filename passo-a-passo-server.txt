@@ -63,3 +63,6 @@ npm i dotenv -D
 
 instalar pra fazer requisicoes pra outras APIs
 npm i axios
+
+jwt serve para manter o usuario no front logado, para cada requisição do front, o back saiba qual usuario está fazendo isso
+npm i @fastify/jwt

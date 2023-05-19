@@ -66,8 +66,17 @@ export async function AuthRoutes(app: FastifyInstance){
             })
         }
 
+        // criando token usado pelo front para mostrar pro back qual usuario está usando
+        const token = app.jwt.sign({
+            name: user.name,
+            avatarUrl: user.avatarUrl,
+        }, {
+            sub: user.id,
+            expiresIn: '30 days',
+        })
+
         return { 
-            user,
+            token,
         };
     })
 
