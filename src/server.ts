@@ -1,6 +1,9 @@
+import 'dotenv/config';
+
 import fastify from "fastify";
 import cors from '@fastify/cors';
 import { memoriesRoutes } from "./routes/memories";
+import { AuthRoutes } from './routes/auth';
 
 const app = fastify();
 
@@ -10,6 +13,7 @@ app.register(cors, {
 });
 
 //registrando as rotas
+app.register(AuthRoutes);
 app.register(memoriesRoutes);
 
 app.listen({

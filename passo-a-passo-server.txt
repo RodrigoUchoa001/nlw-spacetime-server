@@ -56,3 +56,10 @@ significa q quero garantir q o params sempre tenha um "id" do tipo "string" e q 
 
 pra escolher quais front end quero deixar q use a API
 npm i @fastify/cors
+
+------------- a partir daqui aula 3 -------------
+pra poder usar as variaveis de ambiente
+npm i dotenv -D
+
+instalar pra fazer requisicoes pra outras APIs
+npm i axios
