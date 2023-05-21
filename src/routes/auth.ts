@@ -14,7 +14,7 @@ export async function AuthRoutes(app: FastifyInstance){
 
         // pegando o token do usuario do github
         const accessTokenResponse = await axios.post (
-            'https://github.com/login/oauth/acess_token',
+            'https://github.com/login/oauth/access_token',
             null,
             {
                 params: {
