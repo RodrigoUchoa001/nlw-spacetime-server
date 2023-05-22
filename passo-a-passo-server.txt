@@ -66,3 +66,10 @@ npm i axios
 
 jwt serve para manter o usuario no front logado, para cada requisição do front, o back saiba qual usuario está fazendo isso
 npm i @fastify/jwt
+
+------------- a partir daqui aula 4 -------------
+pacote para envio de arquivos do front p/ back
+npm i @fastify/multipart
+
+pra colocar uma pasta do back como publica (a pasta onde vai ficar os uploads)
+npm i @fastify/static 
